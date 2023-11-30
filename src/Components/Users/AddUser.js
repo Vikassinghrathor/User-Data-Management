@@ -33,8 +33,10 @@ import Card from '../UI/Card';
       setErrorMessage('');
     } else if(age < 1 ) {
       setErrorMessage('Invalid Age. Please enter age above 1.');
+    }else if(!collegename.trim()){
+      setErrorMessage('College Name is required. Please enter a valid college name.');
     }else{
-        setErrorMessage('Invalid input. Please enter both username and a valid age')
+      setErrorMessage('Invalid input. Please enter both username, college name, and a valid age');
     }
   }
 
